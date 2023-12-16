@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Day 16 - Naught Nice List</title>
+  </head>
+  <body>
+    <h1>🎅 Naughty List, Nice List 🎁</h1>
+    <div class="container">
+      <form>
+        <div class="input-section">
+          <input type="text" id="new-name" required placeholder="Name" />
+          <div class="form-group">
+            <label for="naughty-checkbox">Nice?</label>
+            <input id="naughty-checkbox" type="checkbox" checked />
+          </div>
+        </div>
+        <button class="btn submit-btn" id="submit-btn">Add Name</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="nice-list">
+        <h2>Nice List</h2>
+        <div class="nice-list-box">
+          <ul id="nice-list"></ul>
+        </div>
+      </div>
+      <div class="naughty-list">
+        <h2>Naughty List</h2>
+        <div class="naughty-list-box">
+          <ul id="naughty-list"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- <button id="sort-button" class="btn sort-btn">Sort</button> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
