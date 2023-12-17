@@ -56,7 +56,6 @@ span::after {
   width: 450px;
   max-width: 100%;
   aspect-ratio: 1;
-  border: 1px solid orange;
   margin: 15px auto;
 }
 
