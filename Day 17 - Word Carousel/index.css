@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: antiquewhite;
+  letter-spacing: 2px;
+}
+
+body {
+  background: rgb(15, 3, 122);
+  background: linear-gradient(
+    311deg,
+    rgba(15, 3, 122, 1) 5%,
+    rgba(15, 2, 60, 1) 57%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 20px 5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+span {
+  text-align: center;
+  background-color: rgb(54, 2, 68);
+  box-shadow: 2px 2px 25px rgba(255, 255, 255, 0.1);
+  max-width: 100%;
+  width: 450px;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  display: block;
+}
+span::after {
+  content: '';
+  font-size: 1rem;
+  animation: changeWord 7s infinite;
+}
+.imgcontainer {
+  position: relative;
+  width: 450px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid orange;
+  margin: 15px auto;
+}
+
+.imgcontainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeImg 7s infinite;
+}
+
+@keyframes changeImg {
+  0%,
+  100% {
+    background-image: url(./images/coding.jpg);
+  }
+  15% {
+    background-image: url(./images/cooking.jpg);
+  }
+  30% {
+    background-image: url(./images/family-time.jpg);
+  }
+  45% {
+    background-image: url(./images/hiking.jpg);
+  }
+  60% {
+    background-image: url(./images/fish-keeping.jpg);
+  }
+  75% {
+    background-image: url(./images/learning.jpg);
+  }
+  90% {
+    background-image: url(./images/amusement.jpg);
+  }
+}
+
+@keyframes changeWord {
+  0%,
+  100% {
+    content: 'Coding';
+  }
+  15% {
+    content: 'Cooking';
+  }
+  30% {
+    content: 'Family Time';
+  }
+  45% {
+    content: 'Hiking';
+  }
+  60% {
+    content: 'Fish Keeping';
+  }
+  75% {
+    content: 'Learning';
+  }
+  90% {
+    content: 'Amusement Rides';
+  }
+}
