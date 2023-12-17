@@ -68,7 +68,6 @@ span::after {
   left: 0;
   right: 0;
   z-index: 999;
-  background: red;
   background-repeat: no-repeat;
   background-size: cover;
   animation: changeImg 7s infinite;
