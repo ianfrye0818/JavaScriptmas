@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Day 20 - Save Santa</title>
+    <style>
+      body {
+        background: rgb(2, 0, 31);
+        background: radial-gradient(
+          circle,
+          rgba(2, 0, 31, 1) 2%,
+          rgba(0, 0, 52, 1) 100%
+        );
+      }
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        line-height: 1.75em;
+        font-family: 'Ubuntu', sans-serif;
+        color: antiquewhite;
+      }
+      h1 {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Santas Gift Sorter</h1>
+      <p>
+        "In today's challenge, we had to write a function that loops over a
+        multi-dimensional array and filters out everything that isn't a 🎅
+        emoji. I chose to tackle the stretch goal and opted not to flatten out
+        the array. This led me to use a recursive function to traverse each
+        array and its nested arrays until the base case was met before moving on
+        to the next top-level array. In the end, we successfully saved Santa!"
+      </p>
+      <img src="./images/saveSanta.png" alt="Screenshot of solution" />
+
+      <p style="text-align: center">
+        In the end.. we successfully saved Santa!
+      </p>
+      <img
+        src="./images/success.png"
+        alt="results from the console - santa is saved"
+      />
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
