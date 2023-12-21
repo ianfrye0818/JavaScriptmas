@@ -1,0 +1,75 @@
+body {
+  background: rgb(2, 0, 31);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 31, 1) 2%,
+    rgba(0, 0, 52, 1) 100%
+  );
+}
+main {
+  line-height: 1.75em;
+  font-family: 'Ubuntu', sans-serif;
+  color: antiquewhite;
+}
+h1 {
+  text-align: center;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  width: 33%;
+  transition: 0.3s;
+  background-color: #333;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.search-bar:focus + .input-label,
+.search-bar:not(:placeholder-shown) + .input-label,
+.search-bar:not(:focus):not(:placeholder-shown) + .input-label {
+  top: -50%;
+  color: aqua;
+}
+
+.search-bar:focus,
+.search-bar:not(:placeholder-shown),
+.search-bar:not(:focus):not(:placeholder-shown) {
+  width: 100%;
+  outline: 1px solid aqua;
+}
